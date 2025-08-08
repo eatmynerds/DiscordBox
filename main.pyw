@@ -1,5 +1,5 @@
 from __future__ import annotations
-import virtualbox, json, pprint, configparser, time, psutil, sys, subprocess, os
+import virtualbox, json, configparser, time, psutil, sys, subprocess, os
 from pypresence import Presence
 
 # Initialize the config parser.
@@ -57,12 +57,8 @@ class RichPresence:
                 # Update the Rich Presence.
                 self.RPC.update(**self.presence_dict)
 
-                # Print the current presence to the terminal.
-                # [TODO] Print the presence dictionary more neatly
-                pprint.pprint(self.presence_dict)
-                print("--------------------")
+                # Removed print or pprint calls to avoid errors.
 
-            # Stop updating the Rich Presence if VirtualBox is not running.
             else:
                 p.wait()
                 os.kill(os.getpid(), 0)
