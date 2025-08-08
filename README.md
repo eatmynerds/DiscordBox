@@ -22,15 +22,22 @@ Download [last release](https://github.com/bukanspot/DiscordBox/releases), instr
 First, clone or download the repository.
 
 ```cmd
-git clone git@github.com:bukanspot/DiscordBox.git
+git clone https://github.com/eatmynerds/DiscordBox.git
 ```
 
 Then go to the [VirtualBox downloads page](https://www.virtualbox.org/wiki/Downloads) and download the VirtualBox SDK.
 
 After downloading it, extract the `VirtualBoxSDK-x.x.x-xxxxxx.zip` file and run the installer.
 
+WARNING: this step requires a python version less than 3.12 (for me i used 3.10.11)
+
 ```cmd
-cd installer
+cd VirtualBoxSDK-x.x.x-xxxxxx.zip\sdk\installer\python
+```
+
+(Powershell)
+```cmd
+python -m venv venv; .\venv\Scripts\Activate.ps1 
 ```
 
 ```cmd
@@ -77,3 +84,4 @@ The `.exe` file found in `dist` directory.
 ## Note
 - The original source has been archived, it's available at [vidhanio/virtualbox-rich-presence](https://github.com/vidhanio/virtualbox-rich-presence)
 - File `main.py` is same as `main.pyw`, file `.pyw` just run terminal or cmd in background.
+
