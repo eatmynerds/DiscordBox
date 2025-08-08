@@ -43,7 +43,7 @@ Then run the setup script
 ```cmd
 python vboxapisetup.py install
 ```
-This may give you a error message saying: "ERROR: Testing VirtualBox Python bindings failed: cannot import name 'VirtualBoxManager' from 'vboxapi' (unknown location)" but it's OK. Now you can proceed to next step.
+This may give you a error message saying: "ERROR: Testing VirtualBox Python bindings failed: cannot import name 'VirtualBoxManager' from 'vboxapi' (unknown location)" but it's OK. Now you can proceed to the next step.
 
 Then, install the required modules.
 
@@ -85,5 +85,6 @@ The `.exe` file found in `dist` directory.
 ## Note
 - The original source has been archived, it's available at [vidhanio/virtualbox-rich-presence](https://github.com/vidhanio/virtualbox-rich-presence)
 - File `main.py` is same as `main.pyw`, file `.pyw` just run terminal or cmd in background.
+
 
 
